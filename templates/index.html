@@ -1,0 +1,36 @@
+<html>
+<title>Kiểm tra kết quả xổ số</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+  h1 {
+    text-align: center;
+    font-style: xx-large;
+  }
+
+  form {
+    text-align: center;
+  }
+</style>
+
+<body>
+
+  <h1>Sổ số miền bắc</h1>
+
+  <form action="/" method="POST">
+    <label for="fname">Nhập số bạn muốn kiểm tra tại đây:</label>
+    <input class="form-control" name="fname" id="exampleInputEmail1" aria-describedby="emailHelp"
+      placeholder="Nhap so ban muon kiem tra" style="text-align: center;margin-left: 37%;width: 25%;">
+    <!-- <input type="text" id="fname" name="fname"><br><br> -->
+    <!-- <input type="submit" value="Submit"> -->
+    <button type="submit" class="btn btn-success" style="
+    margin-top: 20px;
+">submit</button>
+  </form>
+
+  <h1>{{ result }}</h1>
+
+</body>
+
+</html>
