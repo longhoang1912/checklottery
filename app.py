@@ -41,13 +41,12 @@ def ketquaxs():
     result = 'xin lỗi bạn đã tạch lo'
     tree = BeautifulSoup(markup=r.text)
 
-
     if request.method == "GET":
         return render_template("index.html")
     else:
         name = request.form.get("fname")
         for id_reward in list_id:
-            node = tree.find("td", attrs={"id": id_reward})
+            node = tree.find(attrs={"id": id_reward})
             num = node.text
             if name == num[-2:]:
                 if id_reward == "rs_0_0":
